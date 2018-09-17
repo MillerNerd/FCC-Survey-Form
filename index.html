@@ -20,26 +20,31 @@
 				<p id="description">Here's what the thing does</p>
 
 				<form id="survey-form" action="test.txt">
+
+					<!-- Info -->
 					<div class="form-group">
 						<label for="name" id="name-label">Name</label>
-						<input type="text" required placeholder="Enter your name" id="name"><br>
+						<input type="text" class="form-control" required placeholder="Enter your name" id="name"><br>
 					</div>
 					<div class="form-group">
 						<label for="email" id="email-label">Email</label>
-						<input type="email" required placeholder="Enter your email" id="email"><br>
+						<input type="email" class="form-control" required placeholder="Enter your email" id="email"><br>
 					</div>
 					<div class="form-group">
 						<label for="number" id="number-label">Age</label>
-						<input type="number" required placeholder="Enter your age" id="number" min="1" max="125"><br>
+						<input type="number" class="form-control" required placeholder="Enter your age" id="number" min="1" max="125"><br>
 					</div>
 
-					<div class="dropdown">
-						<button class="dropbtn">Dropdown</button>
-						<div class="dropdown-content">
-							<p>A</p>
-							<p>B</p>
-							<p>C</p>
-						</div>
+					<!-- Dropdown -->
+					<div class="form-group">
+						<!-- <label for="dropdown">Example multiple select</label> -->
+						<select class="form-control" id="dropdown">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
 					</div>
 
 					<input type="submit" id="submit">
