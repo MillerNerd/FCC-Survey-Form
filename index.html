@@ -5,6 +5,8 @@
 		<!-- Bootstrap 4.0 -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="../website_playground/CSS/style.css">
+
 	</head>
 
 	<body>
@@ -12,32 +14,39 @@
 			<h1 id="title" class="display-3 text-center">Survey Form</h1>
 		</div>
 
-		<p id="description">Here's what the thing does</p>
+		<div class="container p-light">
+			<div class="jumbotron p-light">
 
-		<form id="survey-form" action="test.txt">
-			<div class="form-group">
-				<label for="name" id="name-label">Name</label>
-				<input type="text" required placeholder="Enter your name" id="name"><br>
-			</div>
-			<div class="form-group">
-				<label for="email" id="email-label">Email</label>
-				<input type="email" required placeholder="Enter your email" id="email"><br>
-			</div>
-			<div class="form-group">
-				<label for="number" id="number-label">Age</label>
-				<input type="number" required placeholder="Enter your age" id="number" min="1" max="125"><br>
-			</div>
+				<p id="description">Here's what the thing does</p>
 
-			<div class="dropdown">
-				<button class="dropbtn">Dropdown</button>
-				<div class="dropdown-content">
-					<p>A</p>
-					<p>B</p>
-					<p>C</p>
-				</div>
+				<form id="survey-form" action="test.txt">
+					<div class="form-group">
+						<label for="name" id="name-label">Name</label>
+						<input type="text" required placeholder="Enter your name" id="name"><br>
+					</div>
+					<div class="form-group">
+						<label for="email" id="email-label">Email</label>
+						<input type="email" required placeholder="Enter your email" id="email"><br>
+					</div>
+					<div class="form-group">
+						<label for="number" id="number-label">Age</label>
+						<input type="number" required placeholder="Enter your age" id="number" min="1" max="125"><br>
+					</div>
+
+					<div class="dropdown">
+						<button class="dropbtn">Dropdown</button>
+						<div class="dropdown-content">
+							<p>A</p>
+							<p>B</p>
+							<p>C</p>
+						</div>
+					</div>
+
+					<input type="submit" id="submit">
+
+				</form>
 			</div>
-			<input type="submit" id="submit">
-		</form>
+		</div>
 
 		<!-- JQuery for Bootstrap -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
